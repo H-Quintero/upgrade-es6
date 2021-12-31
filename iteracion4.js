@@ -21,6 +21,13 @@ const users1 = [
 	{id:4, name: 'Amanda'}
 ]
 
+users1.map(function(data) {
+	if(data.name[0] == 'A') {
+		data.name = 'Anacleto'
+	}
+	return data
+})
+console.log(users1)
 // 4.3 Dado el siguiente array, devuelve una lista que contenga los valores 
 // de la propiedad .name y añade al valor de .name el string ' (Visitado)' 
 // cuando el valor de la propiedad isVisited = true.
@@ -30,3 +37,11 @@ const cities = [
 	{isVisited:true, name: 'Amsterdam'}, 
 	{isVisited:false, name: 'Seul'}
 ]
+
+cities.map(function(visit) {
+	if(visit.isVisited === true) {
+		visit.name = visit.name + ' ' + '(Visitado)' 
+	}
+	return visit
+})
+console.log(cities)
