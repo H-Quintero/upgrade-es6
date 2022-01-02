@@ -34,5 +34,7 @@ const mutations = [
 let alienCucu = aliens.find(alien => alien.name == 'Cucushumushu')
 let mutationPoro = mutations.find(mut => mut.name == 'Porompompero')
 
-let newMutant = {...alienCucu, ...mutationPoro}
+let newMutant = [...aliens, ...mutations]
+let alienMutatio = {...newMutant, mutation: {...alienCucu, ...mutationPoro}}
 console.log(newMutant)
+console.log(alienMutatio)
