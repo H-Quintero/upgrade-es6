@@ -27,10 +27,13 @@ users1.map(function(data) {
 	}
 	return data
 })
-console.log(users1)
+const usersAnacleto = users1.map(item => item.name)
+console.log(usersAnacleto)
+
 // 4.3 Dado el siguiente array, devuelve una lista que contenga los valores 
 // de la propiedad .name y añade al valor de .name el string ' (Visitado)' 
 // cuando el valor de la propiedad isVisited = true.
+
 const cities = [
 	{isVisited:true, name: 'Tokyo'}, 
 	{isVisited:false, name: 'Madagascar'},
@@ -38,7 +41,7 @@ const cities = [
 	{isVisited:false, name: 'Seul'}
 ]
 
-cities.map(function(visit) {
+cities.map((visit) => {
 	if(visit.isVisited === true) {
 		visit.name = visit.name + ' ' + '(Visitado)' 
 	}

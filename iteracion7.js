@@ -20,15 +20,6 @@ console.log(totalNotas)
 // 7.2 Dado el mismo array, haz una suma de todos las notas de los examenes de los 
 // alumnos que esten aprobados usando la función .reduce().
 
-// let aprovados = (nota) => {
-//   let examAprovados = []
-//   for(i = 0; i < nota.length; i++) {
-//     if(nota[i].score >= 5) {
-//       examAprovados.push(nota[i])
-//     }
-//   }
-//   return alumnosAprovados
-// }
 const aprovados = exams.reduce((examAprovados, exam) => {
   if(exam.score >= 5) {
     examAprovados = examAprovados + exam.score

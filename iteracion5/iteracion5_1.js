@@ -3,6 +3,6 @@
 
 const ages = [22, 14, 24, 55, 65, 21, 12, 13, 90]
 
-let agesUp = ages.filter(function(max) {
+let agesUp = ages.filter((max) => {
   return max > 18})
   console.log(agesUp)

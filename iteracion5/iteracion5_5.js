@@ -11,7 +11,7 @@ const streamers = [
 	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ]
 
-let streamersOld = streamers.filter(function(old) {
+let streamersOld = streamers.filter((old) => {
   if(old.gameMorePlayed == 'League of Legends' && old.age > 38) {
     old.gameMorePlayed = old.gameMorePlayed.toUpperCase()
   }

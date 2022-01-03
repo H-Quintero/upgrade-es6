@@ -15,6 +15,7 @@ const movies = [
 
 let movie2010 = movies.find(age => age.date == 2010)
 console.log(movie2010)
+
 // 6.3 Dado el siguiente javascript, usa .find() para econtrar el alien de nombre 
 // 'Cucushumushu' y la mutación 'Porompompero'. Una vez que los encuentres, usa 
 // spread operator para fusionarlos teniendo en cuenta que el objeto de la mutación 
@@ -34,7 +35,6 @@ const mutations = [
 let alienCucu = aliens.find(alien => alien.name == 'Cucushumushu')
 let mutationPoro = mutations.find(mut => mut.name == 'Porompompero')
 
-let newMutant = [...aliens, ...mutations]
-let alienMutatio = {...newMutant, mutation: {...alienCucu, ...mutationPoro}}
+let newMutant = {...alienCucu, mutation: {...mutationPoro}}
+
 console.log(newMutant)
-console.log(alienMutatio)

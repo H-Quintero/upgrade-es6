@@ -8,7 +8,7 @@ const streamers = [
 	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ]
 
-let streamersLOL = streamers.filter(function(LOL) {
+let streamersLOL = streamers.filter((LOL) => {
   return LOL.gameMorePlayed == 'League of Legends'
 })
 console.log(streamersLOL)

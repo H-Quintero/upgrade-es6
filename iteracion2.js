@@ -10,8 +10,8 @@ let {title, gender, year} = game
 
 console.log(title)
 console.log(gender)
-console.log(gender[0], gender[1], gender[2])
 console.log(year)
+console.log(gender[0], gender[1], gender[2])
 
 // 2.2 En base al siguiente javascript, usa destructuring para crear 3 variables 
 // llamadas fruit1, fruit2 y fruit3, con los valores del array. Posteriormente
@@ -34,9 +34,9 @@ const animalFunction = () => {
     return {name: 'Bengal Tiger', race: 'Tiger'}
 };
 
-// let {name, race} = animalFunction()
-// console.log(name)
-// console.log(race)
+let {name, race} = animalFunction()
+console.log(name)
+console.log(race)
 
 
 // 2.4 En base al siguiente javascript, usa destructuring para crear las 
@@ -44,11 +44,11 @@ const animalFunction = () => {
 // Posteriormente crea 3 variables usando igualmente el destructuring para cada uno de los años 
 // y comprueba que todo esta bien imprimiendolo.
 
-const car = {name: 'Mazda 6', itv: [2015, 2011, 2020] }
+const car = {nameCar: 'Mazda 6', itv: [2015, 2011, 2020] }
 
-let {name, itv} = car
+let {nameCar, itv} = car
 
-console.log(name)
+console.log(nameCar)
 console.log(itv)
 
 let itv1 = car.itv[0]

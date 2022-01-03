@@ -9,7 +9,7 @@ const streamers = [
 	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ]
 
-let streamersU = streamers.filter(function(whitU) {
+let streamersU = streamers.filter((whitU) => {
   return whitU.name.includes('u')
 })
 console.log(streamersU)
